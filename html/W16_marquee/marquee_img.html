@@ -1,0 +1,60 @@
+<!-- 資管二B_411022920_李心如 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>跑馬燈</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <br><br><br>
+        <h1 align="center">圖片跑馬燈練習</h1>
+        <br><br><br>
+        <marquee style="background-color: rgb(235, 219, 198); color: rgb(121, 72, 15); font-size: 1cm; font-weight: 200;">資管二B_411022920_李心如</marquee>
+        <br><br><br><br><br><br> 
+        <div class="mx-5" id="pic" style="OVERFLOW: hidden; width:1024">
+            <table width="100%" cellpadding=0 cellspace=0>
+                <tr>
+                    <td id="pic1">
+                        <table>
+                            <tr>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/HTML.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/css.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/javascript.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/bootstrap.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/Python.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/java.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/c.png" height="150"></a></td>                                
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/php.png" height="150"></a></td>
+                                <td><a rel="nofollow" href="./marquee.html" target=_blank><img src="/css/image/mysql.jpeg" height="150"></a></td>                                                                                                
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="pic2"></td>
+                </tr>
+                <script>
+                    var speed = 30
+                    pic2.innerHTML = pic1.innerHTML
+                    pic.scrollLeft = pic.scrollWidth
+                    function Marquee(){
+                        if(pic.scrollLeft <= 0)
+                            pic.scrollLeft += pic2.offsetWidth
+                        else{
+                            pic.scrollLeft--
+                        }
+                    }
+                    var MyMar=setInterval(Marquee,speed)
+                    pic.onmouseover=function() {
+                        clearInterval(MyMar)
+                    }
+                    pic.onmouseout=function() {
+                        MyMar=setInterval(Marquee,speed)
+                    }
+                </script>
+            </table>
+        </div>
+    </body>
+</html>

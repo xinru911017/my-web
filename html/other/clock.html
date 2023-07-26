@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>網頁前端程式設計_時鐘</title>
+
+    <style>
+      #clock {
+        color: white;
+        font: 2em sans-serif;
+        background: rgb(89, 89, 89);
+        margin: 5px auto;
+
+        padding: 5px;
+        border: solid rgb(160, 160, 160) 2px;
+        border-radius: 10px;
+        width: 180px;
+        text-align: center;
+      }
+    </style>
+
+    <script>
+      function startTime() {
+        var today = new Date();
+        var hh = today.getHours();
+        var mm = today.getMinutes();
+        var ss = today.getSeconds();
+        mm = checkTime(mm);
+        ss = checkTime(ss);
+        document.getElementById("clock").innerHTML = hh + ":" + mm + ":" + ss;
+        var timeoutId = setTimeout(startTime, 500);
+      }
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </head>
+
+  <body onload="startTime()">
+    <p align="center"><font size="8">網頁前端程式設計_時鐘<br>資管二B_411022920_李心如</font></p>
+    <p align="center">&nbsp;</p>
+    <div id="clock"></div>
+  </body>
+</html>

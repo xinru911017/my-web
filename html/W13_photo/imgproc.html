@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>濾鏡特效製作</title>
+        <style>
+            div {
+                margin: 5px;
+                float: left;
+            }
+            img { 
+                width:150px; 
+            }
+            #origin  { 
+                width:200px; 
+            }
+            #blur {
+                filter:blur(5px);
+                -webkit-filter:blur(5px);
+            }  
+            #contrast {
+                filter:contrast(300%);
+                -webkit-filter:contrast(300%);
+            }
+            #hue-rotate {
+                filter:hue-rotate(90deg);
+                -webkit-filter:hue-rotate(90deg);
+            }
+            #sepia {
+                filter:sepia(90%);
+                -webkit-filter:sepia(90%);
+            }
+            #saturate {
+                filter:saturate(3);
+                -webkit-filter:saturate(3);
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin-left: 42%; margin-right: 50%;">
+            <h3 align="center">原始圖片</h3>
+            <img id="origin" src="./photo.jpg">
+        </div>
+        
+        <div style="margin-left: 20%; margin-right: 20%;">
+            <h3>圖片濾鏡特效製作</h3>
+            <div>
+                <img id="blur" src="./photo.jpg">
+                <br><span>blur(5px)</span></div>
+            <div>
+                <img id="contrast" src="./photo.jpg">
+                <br><span>contrast(300%)</span></div>
+            <div>
+                <img id="hue-rotate" src="./photo.jpg">
+                <br><span>hue-rotate(90deg)</span>
+            </div>
+            <div>
+                <img id="sepia" src="./photo.jpg">
+                <br><span>sepia(90%)</span>
+            </div>
+            <div>
+                <img id="saturate" src="./photo.jpg">
+                <br><span>saturate(3)</span>
+            </div>
+        </div>
+    </body>
+</html>

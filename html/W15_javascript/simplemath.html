@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>四則運算</title>
+    <style>
+      input {
+        margin-left: 1em;
+      }
+    </style>
+    <script>
+      function validate() {
+        // 取得所有 name="answer" 的物件
+        var all = document.forms["form1"].elements["answer"];
+        if (all[1].checked)
+          // 若是第 1 項 (36) 被選取
+          alert("Good Job!");
+        // 若是選了其它答案
+        else alert("Try Again!");
+      }
+      function validate2() {
+        var all2 = document.forms["form2"].elements["answer2"];
+        if (all2[2].checked) alert("Good Job!");
+        else alert("Try Again!");
+      }
+      function validate3() {
+        var all3 = document.forms["form3"].elements["answer3"];
+        if (all3[1].checked) alert("Good Job!");
+        else alert("Try Again!");
+      }
+      function validate4() {
+        var all4 = document.forms["form4"].elements["answer4"];
+        if (all4[0].checked) alert("Good Job!");
+        else alert("Try Again!");
+      }
+    </script>
+  </head>
+  <body>
+    <h3>四則運算練習</h3>
+    <form name="form1" onsubmit="validate();return false;">
+      20 + 16 = ?
+      <input type="radio" name="answer" value="2016" required />2016
+      <input type="radio" name="answer" value="36" required />36
+      <input type="radio" name="answer" value="216" required />216
+      <input type="submit" />
+    </form>
+    <form name="form2" onsubmit="validate2();return false;">
+      2500 - 789 = ?
+      <input type="radio" name="answer2" value="2016" required />2156
+      <input type="radio" name="answer2" value="36" required />1721
+      <input type="radio" name="answer2" value="216" required />1711
+      <input type="submit" />
+    </form>
+    <form name="form3" onsubmit="validate3();return false;">
+      86 x 33 = ?
+      <input type="radio" name="answer3" value="2016" required />2916
+      <input type="radio" name="answer3" value="36" required />2838
+      <input type="radio" name="answer3" value="216" required />2346
+      <input type="submit" />
+    </form>
+    <form name="form4" onsubmit="validate4();return false;">
+      99 / 6 = ?
+      <input type="radio" name="answer4" value="2016" required />16.5
+      <input type="radio" name="answer4" value="36" required />14.5
+      <input type="radio" name="answer4" value="216" required />12.5
+      <input type="submit" />
+    </form>
+  </body>
+</html>

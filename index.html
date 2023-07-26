@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>首頁</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" media="screen" href="./css/theme.min.css" />
+        <script src="./js/action.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="shadow-lg p-2 mx-1 bg-body rounded">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html" style="margin-right: 100px;">Xinru</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="https://www.pu.edu.tw/" target="_blank">靜宜大學</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://csim.pu.edu.tw/" target="_blank">靜宜大學資訊管理系</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">課堂練習</a>
+                                    <div class="dropdown-menu">
+                                        <div class="d-lg-flex">
+                                            <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(./css/image/text.png); margin: -1px;"></div>
+                                            <div class="d-lg-flex pt-lg-3">
+                                                <div class="mega-dropdown-column">
+                                                    <h6 class="px-3 mb-2">HTML、CSS練習</h6>
+                                                    <ul class="list-unstyled mb-3">
+                                                        <li><a href="./html/W3_TestWord/資管二B_411022920_李心如.html" class="dropdown-item py-1">修改排版</a></li>
+                                                        <li><a href="./index.html" class="dropdown-item py-1">自我介紹</a></li>
+                                                    </ul>
+                                                    <h6 class="px-3 mb-2">列表及清單</h6>
+                                                    <ul class="list-unstyled mb-3">
+                                                        <li><a href="./html/W4_list/411022920-0928.html" class="dropdown-item py-1">列表及清單 v.1</a></li>
+                                                        <li><a href="./html/W4_list/411022920-Ch04-05M.html" class="dropdown-item py-1">列表及清單 v.2</a></li>
+                                                    </ul>
+                                                    <h6 class="px-3 mb-2">影像特效</h6>
+                                                    <ul class="list-unstyled mb-3">
+                                                        <li><a href="./html/W13_photo/animation.html" class="dropdown-item py-1">動畫特效製作</a></li>
+                                                        <li><a href="./html/W13_photo/imgproc.html" class="dropdown-item py-1">濾鏡特效製作</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mega-dropdown-column">
+                                                    <h6 class="px-3 mb-2">JavaScript 練習</h6>
+                                                    <ul class="list-unstyled mb-3">
+                                                        <li><a href="./html/W15_javascript/studentlog.html" class="dropdown-item py-1">線上簽到</a></li>
+                                                        <li><a href="./html/W15_javascript/simplemath.html" class="dropdown-item py-1">四則運算練習</a></li>
+                                                    </ul>
+                                                    <h6 class="px-3 mb-2">跑馬燈</h6>
+                                                    <ul class="list-unstyled mb-3">
+                                                        <li><a href="./html/W16_marquee/marquee_img.html" class="dropdown-item py-1">圖片跑馬燈練習</a></li>
+                                                        <li><a href="./html/W16_marquee/marquee_text.html" class="dropdown-item py-1">文字跑馬燈練習</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./html/other/online.html" target="_blank">線上學習</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">常用連結</a>
+                                    <div class="dropdown-menu">
+                                        <div class="d-lg-flex">
+                                            <div class="d-lg-flex pt-lg-3">
+                                                <div class="mega-dropdown-column">
+                                                    <ul class="list-unstyled mb-3">
+                                                        <li><a href="https://www.youtube.com/" class="dropdown-item py-1" target="_blank">YouTube</a></li>
+                                                        <li><a href="https://alcat.pu.edu.tw/index.php" class="dropdown-item py-1" target="_blank">靜宜E校園服務網</a></li>
+                                                        <li><a href="https://codepen.io/" class="dropdown-item py-1" target="_blank">CodePen 線上編譯器</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>           
+                    </div>
+                    <div id="clock"></div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#799"/></svg>
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1 style="color: aliceblue;">自我介紹</h1><br>
+                                <p><b>行動，是追尋夢想唯一的方式</b></p>
+                                <p>夢想如果不付諸行動，永遠都只是一種空想與幻想，請在此為自己提供一個實踐夢想行動的動力，讓夢想可以被實現。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#779"/></svg>
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1 style="color: aliceblue;">選擇</h1>
+                                <p>路，有很多，那就去找出通往未來的路</p>
+                                <p>挑戰，多難都要闖一闖；跨越，找出自己的不可能；未來，創建吧！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#789"/></svg>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1 style="color: aliceblue;">未來規劃</h1>
+                                <p><b>未來，就是機會</b></p>
+                                <p>可遇而不可求，當機會來臨時就去把握住。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+            </div>
+
+            <div class="container marketing my-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="./css/image/photo.jpg" width="150px" style="border-radius: 100%;">
+                        <h2 class="my-1">自我介紹</h2>
+                        <p>我是李心如，目前就讀靜宜大學資訊管理學系，專長還在發展中，但未來目標是做<u>專案管理</u>，為此，參與了學校組織__行雲者研發基地，還曾經在台上進行演講及擔任活動負責人，而技術方面是透過行雲者去做更深入的練習，時間剩下三年不到，在未來會繼續朝著自己的目標前進。</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="./css/image/black.png" width="150px">
+                        <h2 class="my-1">選擇</h2>
+                        <p>剛開始身為大學生的我，發現自己挺無聊的，想說能不能去找有關於專案開發類型的組織，所以加入了<u>行雲者研發基地</u>，進去裡面的第一年是在全端網頁組學習，沒有想到短短兩個學期了解那麼多網頁知識，而第二年便進入工作小組成為裡面的一員同時也正式接觸專案開發，雖然很累，但是卻得到了從所未有過的滿足，參與行雲者是人生道路中出現的選擇，卻也是個契機，未來可期，繼續努力吧！</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="./css/image/pmd.gif" width="150px" style="border-radius: 21px;">
+                        <h2 class="my-1">未來規劃</h2>
+                        <p>我對我自己三年內的規劃，是希望能夠在有限的時間內，找出當任專案經理時所需的能力，且持續追尋未來的生活目標，並且平衡自身心理的狀態，
+                            除此之外，不管到哪裡，我也會不間斷地了解未來趨勢，最後會透過在校時間<u>充實自己</u>缺少的軟實力與硬實力。</p>
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <audio src="./css/music/music.mp3" type="audio/mp3" style="float: right;" controls autoplay loop></audio>
+            </div>
+        </main> 
+    </body>
+</html>

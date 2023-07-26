@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>四則運算</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script>
+            function compute(){
+                str1=Number(document.getElementById("txt1").value);
+                str2=Number(document.getElementById("txt2").value);
+                comp=document.getElementById("select").value;
+                var result;
+                switch(comp) {
+                case "+":
+                    comp=str1+str2;
+                    break;
+                case "-":
+                    comp=str1-str2;
+                    break;
+                case "*":
+                    comp=str1*str2;
+                    break;
+                case "/":
+                    if(str2==0){
+                        alert("除數不可以為0！");
+                        comp='';
+                    }else{
+                        comp=str1/str2;
+                    }
+                    break;
+                }
+                document.getElementById("result").value=comp;
+            }
+        </script>
+    </head>
+    <body style="background-color: rgb(127, 127, 127);">
+        <h3 class="mt-3" style="font-weight: 900; text-align: center;">資管二B_411022920_李心如</h3>
+        <div class="container">
+            <div class="row mt-5 page-section justify-content-center align-items-center">
+                <div class="col-lg-3 d-none d-md-block d-lg-block">
+                    <h1 class="logo" style="font-weight: 900; text-align: right;">四則<br>
+                        運算
+                    </h1>
+                </div>
+                <div class="col-lg-8">
+                    <input type="text" id="txt1"/>
+                    <select name="method" id="select">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input type="text" id="txt2"/>
+                    <input type="button" id="b1" value="等於" onclick="compute()" />
+                    <input type="text" id="result"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

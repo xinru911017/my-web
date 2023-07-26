@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>彈跳視窗</title>
+
+    <script>
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </head>
+
+  <body>
+    <p align="center"><font size="8"><br><br>彈跳視窗<br><br><br>資管二B_411022920_李心如</font></p>
+    <p align="center">&nbsp;</p>
+
+    <script language:JavaScript>
+    today = new Date();
+    dateValue =
+        today.getYear() +
+        1900 +
+        "年" +
+        (today.getMonth() + 1) +
+        "月" +
+        today.getDate() +
+        "日";
+    window.alert("\n歡迎光臨👋👋👋\n\n來到資管二B_411022920_李心如的練習小課堂\n\n今天是" + dateValue + "🔎");
+    //-->
+    </script>
+  </body>
+</html>
